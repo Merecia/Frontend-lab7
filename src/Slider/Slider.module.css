@@ -1,3 +1,21 @@
 .Slider {
     display: flex;
+    padding: 0 20px;
+}
+
+.Container {
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFDAB9;
+    margin: 100px auto 0px auto;
+    padding: 40px 0px;
+}
+
+.ImagesList {
+    padding: 20px 0px;
+    width: 9999px;
+    display: flex;
+    list-style-type: none;
+    background-color: white;
 }

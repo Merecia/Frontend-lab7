@@ -16,10 +16,12 @@ import img8 from './images/img8.jpg'
 function Slider({ width, activeSlides, speed }) {
 
     const margin = 20
-    const imageHeight = 100
-    const imageWidth = (parseInt(width) - margin * (activeSlides + 1)) / activeSlides
+    const imageHeight = 300
+    const imageWidth = (parseInt(width) - margin * ( parseInt(activeSlides) + 1)) / parseInt(activeSlides)
 
     function getImageComponent(image, imageWidth, imageHeight, marginLeft, marginRight) {
+
+        console.log(imageWidth, imageHeight, marginLeft, marginRight)
 
         return (
             <Image 
@@ -49,12 +51,13 @@ function Slider({ width, activeSlides, speed }) {
 
     let images = [img1, img2, img3, img4, img5, img6, img7, img8]
 
+    console.log(width)
     return (
-        <div className={style.Slider} style={{ width: width }}>
+        <div className={style.Slider}>
 
             <Arrow direction='left' />
 
-            <div className={style.Container}>
+            <div className={style.Container} style={{ width: width }}>
 
                 <div className={style.ImagesList} style={{ transition: speed }}>
 

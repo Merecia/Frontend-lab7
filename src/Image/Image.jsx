@@ -2,8 +2,6 @@ import React from 'react'
 
 function Image( {img, width, height, marginLeft, marginRight} ) {
 
-    console.log(width, height, marginLeft, marginRight)
-
     return (
 
         <img 
@@ -11,6 +9,7 @@ function Image( {img, width, height, marginLeft, marginRight} ) {
             alt={img} 
             style = {{
                 boxSizing: 'border-box',
+                borderRadius: '5px',
                 width: width, 
                 height: height,
                 marginLeft: marginLeft,
