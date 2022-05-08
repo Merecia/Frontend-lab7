@@ -8,7 +8,7 @@ function App() {
       <Slider
         width = '1200px'
         activeSlides = '3'
-        speed = '1s'
+        speed = '2s'
       />
 
     </div>

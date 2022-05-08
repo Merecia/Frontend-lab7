@@ -5,7 +5,7 @@ import style from './Arrow.module.css'
 import arrowLeft from './images/arrow-left.png'
 import arrowRight from './images/arrow-right.png'
 
-function Arrow({ direction, onClick, disabled }) {
+function Arrow ( { direction, onClick, disabled } ) {
 
     let arrow
 
