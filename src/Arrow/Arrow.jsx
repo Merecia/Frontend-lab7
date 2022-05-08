@@ -5,7 +5,7 @@ import style from './Arrow.module.css'
 import arrowLeft from './images/arrow-left.png'
 import arrowRight from './images/arrow-right.png'
 
-function Arrow({ direction }) {
+function Arrow({ direction, onClick, disabled }) {
 
     let arrow
 
@@ -14,9 +14,9 @@ function Arrow({ direction }) {
     else if (direction === 'right') arrow = arrowRight
 
     return (
-        <div className = {style.Arrow}>
-            <img src={arrow} alt='arrow' />
-        </div>
+        <button className = {style.Arrow} onClick = {onClick} disabled = {disabled} >
+            <img src={arrow} alt='arrow'/>
+        </button>
     )
 
 }
