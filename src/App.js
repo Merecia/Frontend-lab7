@@ -6,7 +6,7 @@ function App() {
     <div className="App">
 
       <Slider
-        width = '1500px'
+        width = '1200px'
         activeSlides = '3'
         speed = '1s'
       />
